@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ListView;
 import android.widget.Toast;
+import com.android.volley.Request;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -41,13 +42,14 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
 
         students =new ArrayList<>();
-        url="ttp://127.0.0.1/sajid_work/profile.php";
+        url="http://192.168.25.31/sajid_work/profile.php";
 
         getdata();
     }
 
     private void getdata() {
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
 
@@ -76,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(MainActivity.this,"Wrong",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Wrong...",Toast.LENGTH_SHORT).show();
             }
         });
 
