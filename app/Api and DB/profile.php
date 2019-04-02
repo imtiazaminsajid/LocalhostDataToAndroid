@@ -3,7 +3,7 @@ header('content-type: application/json');
 $host="localhost";
 $user="root";
 $password="";
-$db_name="test_db";
+$db_name="sajid_work";
 
 $conn=mysqli_connect($host,$user,$password,$db_name);
 

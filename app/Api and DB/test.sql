@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2019 at 01:57 AM
+-- Generation Time: Apr 02, 2019 at 08:42 AM
 -- Server version: 10.1.38-MariaDB
--- PHP Version: 7.1.27
+-- PHP Version: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `test_db`
+-- Database: `sajid_work`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +40,9 @@ CREATE TABLE `test` (
 
 INSERT INTO `test` (`id`, `name`, `roll`) VALUES
 (1, 'Anwar Hossain Bappy', '160050300043'),
-(2, 'Tasnima Shanta', '160050300044');
+(2, 'Tasnima Shanta', '160050300044'),
+(3, 'Imtiaz Amin', '1537CSE00417'),
+(4, 'Sumayea Rahman', '1536CSE00342');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +62,7 @@ ALTER TABLE `test`
 -- AUTO_INCREMENT for table `test`
 --
 ALTER TABLE `test`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
